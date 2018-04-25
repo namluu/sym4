@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'blog_post_show' %}
+
+{% block main %}
+    <h1>{{ post.title }}</h1>
+    {{ post.content|md2html }}
+{% endblock %}
